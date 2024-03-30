@@ -33,7 +33,6 @@ local function create(x,y,z,p)
 
     widget.addColor(table.unpack(color))
   end
-end
 
 --for x=-size,size do
   for x=-scan,size do
