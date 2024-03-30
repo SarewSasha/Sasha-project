@@ -1,4 +1,4 @@
-dlocal com=require("component")
+local com=require("component")
 
 local arg={...}
 local glass=com.glasses
