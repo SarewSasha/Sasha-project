@@ -46,7 +46,7 @@ local function create(x,y,z,p)
       for Y=-math.min( size,18)
 
 --      local y=Y+32
-        local Y=Y+32
+        local y=Y+32
 --      if tile[y]>pl then create(x,Y,z,tile[y]) end
         if tile[y]>pl then create(x,Y,z,tile[y]) end
  --   end
