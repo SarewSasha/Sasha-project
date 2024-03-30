@@ -1,4 +1,4 @@
-local com=require("component")
+dlocal com=require("component")
 
 local arg={...}
 local glass=com.glasses
@@ -21,6 +21,7 @@ local function tocolor(pl)
     return {color,1-color,0}
   end
 end
+end  
 
 local function create(x,y,z,p)
     local widget = glass.addCube3D()
