@@ -35,16 +35,26 @@ local function create(x,y,z,p)
   end
 end
 
-for x=-size,size do
-  for z=-size,size do
-    tile=geo.scan(x,z)
-    os.sleep(0)
-    for Y=-math.min(size,18),math.min(maxY,18) do
-      local y=Y+32
-      if tile[y]>pl then create(x,Y,z,tile[y]) end
-    end
-  end
-end
+--for x=-size,size do
+  for x=-scan,size do
+ -- for z=-size,size do
+    for z=-scan,size do
+  --    tile=geo.scan(x,z)
+        tile=geo.scan(x,z)
+--    os.sleep(0)
+      os.sleep(0)
+--    for Y=-math.min(size,18),math.min(maxY,18) do
+      for Y=-math.min( size,18)
 
+--      local y=Y+32
+        local Y=Y+32
+--      if tile[y]>pl then create(x,Y,z,tile[y]) end
+        if tile[y]>pl then create(x,Y,z,tile[y]) end
+ --   end
+    end
+--  end
+    end
+--end
+   end
 
 print("found objects:", (glass.getObjectCount or glass.getWidgetCount)())
